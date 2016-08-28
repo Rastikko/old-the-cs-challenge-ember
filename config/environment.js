@@ -16,6 +16,16 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    torii: {
+      // a 'session' property will be injected on routes and controllers
+      sessionServiceName: 'session',
+      providers: {
+        'linked-in-oauth2': {
+          apiKey:      '75ee4zo80mit43',
+          redirectUri: 'http://localhost:8080/auth/linkedin/callback' // default is the current URL
+        }
+      }
     }
   };
 
