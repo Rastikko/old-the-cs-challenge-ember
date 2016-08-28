@@ -23,7 +23,7 @@ module.exports = function(environment) {
       providers: {
         'linked-in-oauth2': {
           apiKey:      '75ee4zo80mit43',
-          redirectUri: 'http://localhost:8080/auth/linkedin/callback' // default is the current URL
+          redirectUri: 'http://localhost:4200/callback' // default is the current URL
         }
       }
     }
